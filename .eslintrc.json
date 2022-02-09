@@ -1,0 +1,17 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["prettier","plugin:react-hooks/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+  "no-restricted-imports": [
+    "error",
+    {
+      "patterns": ["@mui/*/*/*", "!@mui/material/test-utils/*"]
+    }
+  ]
+}
+}
